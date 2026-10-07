@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200" viewBox="0 0 1000 200">
+  <defs>
+    <linearGradient id="rgb" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff0080"><animate attributeName="stop-color" values="#ff0080;#ff8c00;#ffff00;#00ff00;#00ffff;#0080ff;#8000ff;#ff0080" dur="3s" repeatCount="indefinite"/></stop>
+      <stop offset="20%"  stop-color="#ff8c00"><animate attributeName="stop-color" values="#ff8c00;#ffff00;#00ff00;#00ffff;#0080ff;#8000ff;#ff0080;#ff8c00" dur="3s" repeatCount="indefinite"/></stop>
+      <stop offset="40%"  stop-color="#ffff00"><animate attributeName="stop-color" values="#ffff00;#00ff00;#00ffff;#0080ff;#8000ff;#ff0080;#ff8c00;#ffff00" dur="3s" repeatCount="indefinite"/></stop>
+      <stop offset="60%"  stop-color="#00ff00"><animate attributeName="stop-color" values="#00ff00;#00ffff;#0080ff;#8000ff;#ff0080;#ff8c00;#ffff00;#00ff00" dur="3s" repeatCount="indefinite"/></stop>
+      <stop offset="80%"  stop-color="#00ffff"><animate attributeName="stop-color" values="#00ffff;#0080ff;#8000ff;#ff0080;#ff8c00;#ffff00;#00ff00;#00ffff" dur="3s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#8000ff"><animate attributeName="stop-color" values="#8000ff;#ff0080;#ff8c00;#ffff00;#00ff00;#00ffff;#0080ff;#8000ff" dur="3s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1000" height="200" fill="#0d1117"/>
+  <text x="500" y="120" text-anchor="middle"
+    font-family="Ribeye, Impact, sans-serif"
+    font-size="78" font-weight="bold"
+    fill="url(#rgb)" filter="url(#glow)">
+    B7R • KNIGHT BOT
+  </text>
+</svg>
